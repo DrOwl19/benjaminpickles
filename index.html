@@ -1,37 +1,140 @@
 <!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<link rel="shortcut icon" type="image/x-icon" href="Benjamin Pickles Favicon.png">
-		<title>Benjamin Pickles</title>
-    		<style>
-.topnav {
-  background-color: #333;
-  overflow: hidden;
+<html><head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Times New Roman;
+  color: white;
+  padding: 20px;
+  background: white;
 }
 
-.topnav a {
-  float: left;
-  color: #f2f2f2;
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
   text-align: center;
-  padding: 14px 16px;
+  background: #8904B1;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 65%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 30%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #8904B1;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #8904B1;
+  margin-top: 20px;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+.fa {
+  padding: 13px;
+  font-size: 18px;
+  width: 18px;
+  text-align: center;
   text-decoration: none;
-  font-size: 21px;
+  border-radius: 50%;
 }
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+.fa:hover {
+    opacity: 0.7;
 }
-
-.topnav a.active {
-  background-color: #4CAF50;
+.fa-facebook {
+  background: #3B5998;
   color: white;
 }
-    		</style>
-	</head>
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">Recent posts</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+</style>
+</head><body><div class="header">
+  <h2><b>BEN SAYS THINGS<b/></h2>
 </div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h2>Popular Post</h2>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div>
+    <div class="card">
+      <b><h2>Follow Me</h2></b>
+      <a href="https://www.facebook.com/benjamintpickles/" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/bentpickles" class="fa fa-twitter"></a>
+      <a href="https://www.youtube.com/channel/UCwrrz2LJBrUameREIF94TPg" class="fa fa-youtube"></a>
+      <a href="https://www.reddit.com/user/drowl11" class="fa fa-reddit"></a>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+</body></html>
