@@ -1,0 +1,26 @@
+body {
+    font-family:Verdana;
+}
+#header {
+    display:flex;
+    width:50%;
+    justify-content: space-around;
+    margin-left:5%;
+}
+#headertext {
+    flex:1;
+    display:inline-block;
+    justify-content: space-between;
+}
+#headerh1 {
+    font-size:150%;
+    margin-top:-0.8em;
+}
+#headerp {
+    margin-top:-1.5em;
+}
+#header img {
+    height:8em;
+    width:8em;
+    margin-right:5%;
+}
