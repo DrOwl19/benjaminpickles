@@ -1,12 +1,20 @@
 body {
     font-family:Verdana;
+    margin:0px;
 }
+
 #header {
     display:flex;
-    width:50%;
     justify-content: space-around;
-    margin-left:5%;
+    padding-left:5%;
+    position:sticky;
+    flex-wrap:wrap;
+    top: 0px;
+    border-bottom:1px solid rgb(44, 40, 40);
+    background-color:white;
+    height:15%;
 }
+
 #headertext {
     flex:1;
     display:inline-block;
@@ -23,4 +31,22 @@ body {
     height:8em;
     width:8em;
     margin-right:5%;
+}
+#home {
+    text-decoration: none;
+    color:black;
+}
+#headernav {
+    display: inline-block;
+    margin-top:3.5%;
+    font-size:125%;
+    width:25%;
+}
+#headernav a {
+    text-decoration:none;
+    color:#FF8811;
+    padding-right:2%;
+}
+#headernav a:hover {
+    color:#F4D06F;
 }
