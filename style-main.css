@@ -3,6 +3,15 @@ body {
     margin:0px;
 }
 
+a {
+    text-decoration:none;
+    color:#FF8811;
+}
+
+a:hover {
+    color:#F4D06F;
+}
+
 #header {
     display:flex;
     justify-content: space-around;
@@ -49,4 +58,16 @@ body {
 }
 #headernav a:hover {
     color:#F4D06F;
+}
+#articleslist {
+    list-style:none;
+}
+.homelink {
+    color:black;
+}
+.homelink:hover {
+    color:black;
+}
+#finch {
+    margin-right:2%;
 }
